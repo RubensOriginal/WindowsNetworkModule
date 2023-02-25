@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleInterface", "Console
 		{6264FD79-A57E-45AE-899D-E6A83948617B} = {6264FD79-A57E-45AE-899D-E6A83948617B}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsInterface", "WindowsInterface\WindowsInterface.csproj", "{227B6141-A49D-426F-AEA3-8CF64679606D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6264FD79-A57E-45AE-899D-E6A83948617B} = {6264FD79-A57E-45AE-899D-E6A83948617B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,5 +26,9 @@ Global
 		{37A66C7A-1727-4691-AA31-0E26925723CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A66C7A-1727-4691-AA31-0E26925723CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A66C7A-1727-4691-AA31-0E26925723CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227B6141-A49D-426F-AEA3-8CF64679606D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227B6141-A49D-426F-AEA3-8CF64679606D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227B6141-A49D-426F-AEA3-8CF64679606D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227B6141-A49D-426F-AEA3-8CF64679606D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
