@@ -43,6 +43,7 @@ namespace WindowsInterface
             this.generateQRCode.TabIndex = 0;
             this.generateQRCode.Text = "Generate QR Code";
             this.generateQRCode.UseVisualStyleBackColor = true;
+            this.generateQRCode.Click += new System.EventHandler(this.generateQRCode_Click);
             // 
             // exit
             // 

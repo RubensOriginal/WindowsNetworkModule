@@ -11,6 +11,7 @@ namespace WindowsInterface
             InitializeComponent();
 
             notifyIcon.Visible = true;
+            
         }
 
         private void notifyIcon_MouseClick(object sender, MouseEventArgs e)

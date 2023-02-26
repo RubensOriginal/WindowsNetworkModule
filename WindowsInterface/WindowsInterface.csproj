@@ -61,6 +61,12 @@
         <Compile Include="Forms\MenuTrayForm.Designer.cs">
           <DependentUpon>MenuTrayForm.cs</DependentUpon>
         </Compile>
+        <Compile Include="Forms\NetworkQrCodeForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\NetworkQrCodeForm.Designer.cs">
+          <DependentUpon>NetworkQrCodeForm.cs</DependentUpon>
+        </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <EmbeddedResource Include="Forms\IconTrayForm.resx">
@@ -68,6 +74,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Forms\MenuTrayForm.resx">
           <DependentUpon>MenuTrayForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\NetworkQrCodeForm.resx">
+          <DependentUpon>NetworkQrCodeForm.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +100,16 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="App.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\QrCodeModule\QrCodeModule.csproj">
+        <Project>{526d93ba-091c-4c25-989d-ec7316c3c634}</Project>
+        <Name>QrCodeModule</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\WifiModule\WifiModule.csproj">
+        <Project>{6264fd79-a57e-45ae-899d-e6a83948617b}</Project>
+        <Name>WifiModule</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

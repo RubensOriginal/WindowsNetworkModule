@@ -1,14 +1,14 @@
-﻿using System;
-using System.Diagnostics;
+﻿using Gma.System.MouseKeyHook;
 using System.Windows.Forms;
-using Gma.System.MouseKeyHook;
-using System.Threading;
+using System;
+using System.Drawing;
+using QrCodeModule;
+using WifiModule;
 
 namespace WindowsInterface
 {
     public partial class MenuTrayForm : Form
     {
-        private bool wasClicked = false;
         
         public MenuTrayForm()
         {
@@ -30,6 +30,34 @@ namespace WindowsInterface
         {
             
             Application.Exit();
+        }
+
+        private void generateQRCode_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap = null;
+            
+            try
+            {
+                NetworkDataFinder finder = new NetworkDataFinder();
+                QrCodeManager qrCodeManager = new QrCodeManager();
+
+                bitmap = qrCodeManager.GenerateQrCodeWithBMP(
+                    finder.GetNetworkData(finder
+                            .GetCurrentNetworkName())
+                        .NetworkDataToWifiStringPattern());
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+            }
+
+            NetworkQrCodeForm qrCodeForm = new NetworkQrCodeForm(bitmap);
+            qrCodeForm.Show();
+
+            qrCodeForm.Location = new Point(Location.X - qrCodeForm.Width + Width, Location.Y - qrCodeForm.Height + Height);
+            qrCodeForm.TopMost = true;
+            
+            Hide();
         }
     }
 }
