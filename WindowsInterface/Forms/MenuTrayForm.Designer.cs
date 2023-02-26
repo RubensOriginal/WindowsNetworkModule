@@ -68,7 +68,6 @@ namespace WindowsInterface
             this.Name = "MenuTrayForm";
             this.ShowInTaskbar = false;
             this.Text = "MenuTrayForm";
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MenuTrayForm_MouseClick);
             this.ResumeLayout(false);
         }
 

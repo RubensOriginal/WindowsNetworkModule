@@ -31,10 +31,5 @@ namespace WindowsInterface
             
             Application.Exit();
         }
-
-        private void MenuTrayForm_MouseClick(object sender, MouseEventArgs e)
-        {
-            wasClicked = true;
-        }
     }
 }
