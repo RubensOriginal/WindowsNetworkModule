@@ -59,13 +59,16 @@ namespace WindowsInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(257, 85);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.generateQRCode);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuTrayForm";
+            this.ShowInTaskbar = false;
             this.Text = "MenuTrayForm";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MenuTrayForm_MouseClick);
             this.ResumeLayout(false);
         }
 
