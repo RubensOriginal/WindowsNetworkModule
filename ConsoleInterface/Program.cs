@@ -15,6 +15,8 @@ namespace ConsoleInterface
             Console.WriteLine("Senha: " + networkData.Password);
             Console.WriteLine("Seguranca: " + networkData.SecurityType);
 
+            Console.WriteLine("QrCodeString: " + networkData.NetworkDataToWifiStringPattern());
+
             Console.ReadKey();
         }
     }
