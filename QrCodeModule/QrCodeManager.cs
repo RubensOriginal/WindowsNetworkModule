@@ -8,5 +8,6 @@ namespace QrCodeModule
 {
     public class QrCodeManager
     {
+
     }
 }

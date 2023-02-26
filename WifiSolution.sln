@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiModule", "WifiModule\WifiModule.csproj", "{6264FD79-A57E-45AE-899D-E6A83948617B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleInterface", "ConsoleInterface\ConsoleInterface.csproj", "{37A66C7A-1727-4691-AA31-0E26925723CB}"
@@ -9,8 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleInterface", "Console
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsInterface", "WindowsInterface\WindowsInterface.csproj", "{227B6141-A49D-426F-AEA3-8CF64679606D}"
 	ProjectSection(ProjectDependencies) = postProject
+		{526D93BA-091C-4C25-989D-EC7316C3C634} = {526D93BA-091C-4C25-989D-EC7316C3C634}
 		{6264FD79-A57E-45AE-899D-E6A83948617B} = {6264FD79-A57E-45AE-899D-E6A83948617B}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QrCodeModule", "QrCodeModule\QrCodeModule.csproj", "{526D93BA-091C-4C25-989D-EC7316C3C634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +36,15 @@ Global
 		{227B6141-A49D-426F-AEA3-8CF64679606D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227B6141-A49D-426F-AEA3-8CF64679606D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227B6141-A49D-426F-AEA3-8CF64679606D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526D93BA-091C-4C25-989D-EC7316C3C634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526D93BA-091C-4C25-989D-EC7316C3C634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526D93BA-091C-4C25-989D-EC7316C3C634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526D93BA-091C-4C25-989D-EC7316C3C634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4983C667-D9A8-42CA-A5F5-37604388EF49}
 	EndGlobalSection
 EndGlobal
