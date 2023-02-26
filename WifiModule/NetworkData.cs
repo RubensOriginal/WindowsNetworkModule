@@ -32,5 +32,28 @@ namespace WifiModule
             get => securityType;
             private set => securityType = value;
         }
+
+        public String NetworkDataToWifiStringPattern()
+        {
+            return "WIFI:S:" + name +";T:" + SecurityTypeToWifiString(securityType) + ";P:" + password + ";;";
+        }
+
+        private String SecurityTypeToWifiString(String securityType)
+        {
+            if (securityType.StartsWith("WPA"))
+            {
+                return "WPA";
+            } 
+            else if (securityType.StartsWith("WEP"))
+            {
+                return "WEP";
+            }
+            else
+            {
+                return "black";
+            }
+        }
+        
+        
     }
 }
