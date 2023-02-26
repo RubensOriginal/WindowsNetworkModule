@@ -48,6 +48,8 @@ namespace WindowsInterface
             }
             catch (Exception exception)
             {
+                // QrCodeManager qrCodeManager = new QrCodeManager();
+                // bitmap = qrCodeManager.GenerateQrCodeWithBMP("WIFI:S:SSID;T:WPA;P:PASSWORD;;");
                 Console.WriteLine(exception);
             }
 

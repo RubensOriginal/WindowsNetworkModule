@@ -13,7 +13,7 @@ namespace WindowsInterface
 
             if (bitmap != null)
             {
-                qrCodebox.Image = bitmap;
+                qrCodebox.Image = new Bitmap(bitmap, qrCodebox.Width, qrCodebox.Height);
             }
             
         }
